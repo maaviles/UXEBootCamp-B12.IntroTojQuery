@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
 
   // element selector
 
-$("li").text("redrum o__o");
+$("span").text("redrum o__o");
 
   // ID selector
 
@@ -31,5 +31,25 @@ $(".scale").hover(function() {
 });
 
 // Traverse the DOM and add/edit DOM elements
+
+  // Descendant selector
+
+$("#welcome h1").text("Built with Meeps");
+
+  // Select only direct children
+// need to fix
+//$("#meep > li").text("Booop");
+
+  // pseudo classes
+$("#meep li:odd").text("I am so odd");
+
+  // Traversing the Dom
+  // this is a faster alternative to other selectors:
+$("#meep").find("li");
+
+$("h2").last().text("here I am!");
+
+$("li").first().next().prev().text("no, here I am!");
+
 
 });
