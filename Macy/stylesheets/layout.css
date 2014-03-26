@@ -1,0 +1,119 @@
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+.container {
+    margin-top: 50px;
+}
+
+.logo {
+  border-radius: 50px 50px 50px 50px;
+}
+ 
+.mainNav {
+    margin: 13px 0 0 0;
+}
+ 
+.mainNav ul li {
+    display: inline;
+    margin: 0 20px 0 0;
+    margin-bottom: 130px;
+}
+ 
+.mainNav a {
+    text-decoration: none;
+}
+ 
+.mainNav a:hover {
+    text-decoration: underline;
+}
+
+.header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  /* == for responsive img crop == */
+  max-height: 300px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.header img {
+  border-radius: 75px 75px 75px 75px;
+  margin: 0 auto;
+  /* == for responsive img crop == */
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+}
+
+#welcome {
+  padding-top: 20px;
+}
+
+.one-third.column.feature img {
+  border-radius: 20px 20px 20px 20px;
+}
+
+.sixteen.columns.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+  }
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+  }
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+  }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+  }
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+    .mainNav a {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
