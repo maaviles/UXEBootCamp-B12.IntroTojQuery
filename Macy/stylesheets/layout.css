@@ -55,6 +55,10 @@
   height: auto !important;
 }
 
+#hidden_div {
+  display: none;
+}
+
 #welcome {
   padding-top: 20px;
 }
