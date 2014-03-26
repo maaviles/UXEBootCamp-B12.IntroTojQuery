@@ -13,12 +13,12 @@ $("span").text("redrum o__o");
 $("#hireMe").hover(
   function() {
     var $this = $(this);
-    $this.data("HIRE ME", $this.text());
+    $this.data("hireMe", $this.text());
     $this.text("HIRED!!!1!");
   },
   function () {
     var $this = $(this);
-    $this.text($this.data("HIRE ME"));
+    $this.text($this.data("hireMe"));
   }
 );
 
@@ -51,5 +51,7 @@ $("h2").last().text("here I am!");
 
 $("li").first().next().prev().text("no, here I am!");
 
+
+// keyboard events, link layover
 
 });
